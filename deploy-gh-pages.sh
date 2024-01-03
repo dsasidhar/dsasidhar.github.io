@@ -8,6 +8,7 @@ git rm -rf .
 
 # Copy new build from dist folder
 cp -R ../dsasidhar.github.io/dist/* .
+cp -R ../dsasidhar.github.io/CNAME .
 
 # Add all files to git
 git add .
