@@ -4,6 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "turbo vite.build",
+    "deploy": "pnpm build && pnpm deploy-gh-pages",
+    "deploy-gh-pages": "./deploy-gh-pages.sh",
     "dev": "turbo vite.dev",
     "lint": "tsc",
     "prepare": "is-ci || husky install",
@@ -20,9 +22,14 @@
     "package.json": "pnpm sort-package-json"
   },
   "dependencies": {
+    "@react-three/drei": "^9.92.7",
+    "@react-three/fiber": "^8.15.13",
+    "@types/three": "^0.160.0",
+    "framer-motion": "^10.17.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.21.1",
+    "three": "^0.160.0",
     "tilg": "0.1.1"
   },
   "devDependencies": {
