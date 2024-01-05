@@ -22,13 +22,16 @@
     "package.json": "pnpm sort-package-json"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.92.7",
     "@react-three/fiber": "^8.15.13",
+    "@types/react-vertical-timeline-component": "^3.3.6",
     "@types/three": "^0.160.0",
     "framer-motion": "^10.17.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.21.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.160.0",
     "tilg": "0.1.1"
   },

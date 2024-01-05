@@ -10,7 +10,7 @@ export function AboveFold() {
       <div className="absolute left-0 top-0 z-0 h-[100vh] w-screen">
         <img
           src={multiMonitor}
-          alt="world map"
+          alt="background"
           className="hidden h-full w-full object-cover sm:block"
         />
       </div>
@@ -25,7 +25,7 @@ export function AboveFold() {
               mx-auto flex max-w-7xl flex-row items-start
               justify-between gap-3`}
         >
-          <div className="ml-3 mt-5 flex flex-col items-center justify-center">
+          <div className="ml-2 mt-5 flex flex-col items-center justify-center">
             <div className="h-5 w-5 rounded-full bg-[#0a0a0a] sm:hidden" />
             <div className="bw-gradient h-40 w-1 sm:hidden sm:h-80" />
           </div>
@@ -34,7 +34,7 @@ export function AboveFold() {
             <h1
               className={`${styles.heroHeadText} font-poppins uppercase text-eerieBlack`}
             >
-              Hi, I'm{" "}
+              <span className="capitalize">Hi, I'm </span>
               <span
                 className="font-mova text-[50px]
                     font-extrabold uppercase text-eerieBlack

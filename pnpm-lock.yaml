@@ -1,12 +1,18 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@emailjs/browser':
+    specifier: ^3.11.0
+    version: 3.11.0
   '@react-three/drei':
     specifier: ^9.92.7
     version: 9.92.7(@react-three/fiber@8.15.13)(@types/three@0.160.0)(react-dom@18.2.0)(react@18.2.0)(three@0.160.0)
   '@react-three/fiber':
     specifier: ^8.15.13
     version: 8.15.13(react-dom@18.2.0)(react@18.2.0)(three@0.160.0)
+  '@types/react-vertical-timeline-component':
+    specifier: ^3.3.6
+    version: 3.3.6
   '@types/three':
     specifier: ^0.160.0
     version: 0.160.0
@@ -22,6 +28,9 @@ dependencies:
   react-router-dom:
     specifier: 6.21.1
     version: 6.21.1(react-dom@18.2.0)(react@18.2.0)
+  react-vertical-timeline-component:
+    specifier: ^3.6.0
+    version: 3.6.0(react@18.2.0)
   three:
     specifier: ^0.160.0
     version: 0.160.0
@@ -103,6 +112,11 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.1
+    dev: false
+
+  /@emailjs/browser@3.11.0:
+    resolution: {integrity: sha512-RkY3FKZ3fPdK++OeF46mRTFpmmQWCHUVHZH209P3NE4D5sg2Atg7S2wa3gw5062Gl4clt4Wn5SyC4WhlVZC5pA==}
+    engines: {node: '>=14.0.0'}
     dev: false
 
   /@emotion/is-prop-valid@0.8.8:
@@ -783,6 +797,12 @@ packages:
       '@types/react': 18.2.46
     dev: false
 
+  /@types/react-vertical-timeline-component@3.3.6:
+    resolution: {integrity: sha512-OUvyPXRjXvUD/SNLO0CW0GbIxVF32Ios5qHecMSfw6kxnK1cPULD9NV80EuqZ3WmS/s6BgbcwmN8k4ISb3akhQ==}
+    dependencies:
+      '@types/react': 18.2.46
+    dev: false
+
   /@types/react@18.2.46:
     resolution: {integrity: sha512-nNCvVBcZlvX4NU1nRRNV/mFl1nNRuTuslAJglQsq+8ldXe5Xv0Wd2f7WTE3jOxhLH2BFfiZGC6GCp+kHQbgG+w==}
     dependencies:
@@ -979,6 +999,10 @@ packages:
   /ci-info@3.3.0:
     resolution: {integrity: sha512-riT/3vI5YpVH6/qomlDnJow6TBee2PBKSEpx3O32EGPYbWGIRsIlGRms3Sm74wYE1JMo8RnO04Hb12+v1J5ICw==}
     dev: true
+
+  /classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
+    dev: false
 
   /cli-cursor@4.0.0:
     resolution: {integrity: sha512-VGtlMu3x/4DOtIUwEkRezxUZ2lBacNJCHash0N0WeZDBS+7Ux1dm3XWAgWYxLJFMMdOeXMHXorshEFhbMSGelg==}
@@ -1935,6 +1959,14 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-intersection-observer@8.34.0(react@18.2.0):
+    resolution: {integrity: sha512-TYKh52Zc0Uptp5/b4N91XydfSGKubEhgZRtcg1rhTKABXijc4Sdr1uTp5lJ8TN27jwUsdXxjHXtHa0kPj704sw==}
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
@@ -1986,6 +2018,17 @@ packages:
       debounce: 1.2.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /react-vertical-timeline-component@3.6.0(react@18.2.0):
+    resolution: {integrity: sha512-l9zulqjIGlRuaQeplGzV4r/tG2RYBpYt84Il8w4IxnJze2cDIGI04MKo3F7f1sHT0Sih1ohEFts8UV23AJS15Q==}
+    requiresBuild: true
+    dependencies:
+      classnames: 2.5.1
+      prop-types: 15.8.1
+      react-intersection-observer: 8.34.0(react@18.2.0)
+    transitivePeerDependencies:
+      - react
     dev: false
 
   /react@18.2.0:

@@ -33,11 +33,12 @@ export function fadeIn(
   type: "spring" | "tween" = "spring",
   delay: number = 0,
   duration: number = 0.5,
+  transitionOpacity: boolean = true,
 ): Variants {
   return {
     hidden: {
       ...getXYBasedOnDirection(direction),
-      opacity: 0,
+      opacity: transitionOpacity ? 0 : 1,
     },
     show: {
       transition: {

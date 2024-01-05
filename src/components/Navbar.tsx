@@ -23,15 +23,12 @@ export default function Navbar() {
             window.scrollTo(0, 0);
           }}
         >
-          {/* <img
-            src={logo} // your logo comes here
-            alt="logo"
-            className="h-[45px] w-[45px] object-contain sm:h-[50px] sm:w-[50px]"
-          /> */}
           <span className="font-beckman tracking-[3px]">
-            <span className="text-deepRed">{"<"} </span>
-            <span className="text-eerieBlack">SD</span>
-            <span className="text-deepRed">{" />"}</span>
+            <span className="tracking-[1px]">
+              <span className="text-[20px] text-deepRed ">{"<"} </span>
+              <span className="text-eerieBlack">SD</span>
+              <span className="text-[20px] text-deepRed">{"/>"}</span>
+            </span>
             <span className="ml-2 text-[18px] font-bold text-eerieBlack">
               sasidhar.dwadasi
             </span>
@@ -50,6 +47,21 @@ export default function Navbar() {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li
+            key={"resume"}
+            className={`${
+              active === "resume" ? "text-lightRed" : "text-eerieBlack"
+            } nav-links  cursor-pointer font-mova 
+                text-[21px] font-medium uppercase tracking-[3px]`}
+            onClick={() => setActive("resume")}
+          >
+            <a
+              href={`./resume.pdf`}
+              download="Sasidhar_Dwadasi_Fullstack_Developer.pdf"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
 
         {/* mobile */}
