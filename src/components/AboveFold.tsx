@@ -16,12 +16,12 @@ export function AboveFold() {
       </div>
 
       <section
-        className="relative mx-auto flex h-screen w-full flex-col overflow-hidden 
+        className="relative mx-auto flex h-screen w-full flex-col overflow-hidden
             bg-hero-mobile sm:flex-row sm:bg-hero"
       >
         <div
-          className={`absolute inset-0 top-[150px] sm:top-[250px] 
-              lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
+          className={`absolute inset-0 top-[150px] sm:top-[250px]
+              lg:top-[150px] xl:top-[250px] ${styles.paddingX}
               mx-auto flex max-w-7xl flex-row items-start
               justify-between gap-3`}
         >
@@ -47,11 +47,11 @@ export function AboveFold() {
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              A Passionate Full stack developer and a problem solver.
+              A Passionate Javascript full stack developer and a problem solver.
             </p>
           </div>
           <div
-            className="xxs:mt-4 flex w-screen flex-col 
+            className="xxs:mt-4 flex w-screen flex-col
                 items-start justify-center sm:-ml-[3rem]"
           ></div>
 
@@ -59,12 +59,12 @@ export function AboveFold() {
         </div>
 
         <div
-          className="absolute bottom-32 flex w-full 
+          className="absolute bottom-32 flex w-full
               items-center justify-center xs:bottom-10"
         >
           <a href="#about">
             <div
-              className="flex h-[64px] w-[35px] items-start 
+              className="flex h-[64px] w-[35px] items-start
                 justify-center rounded-3xl border-4
                 border-dim  p-2"
             >

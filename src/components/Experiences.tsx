@@ -39,11 +39,11 @@ function ExperienceCard({ experience }: { experience: IExperience }) {
       }
     >
       <div>
-        <h3 className="font-beckman text-[24px] font-bold tracking-[2px] text-jetLight">
+        <h3 className=" text-[24px] font-bold tracking-[2px] text-jetLight">
           {experience.title}
         </h3>
         <p
-          className="font-overcameBold text-[22px] font-semibold tracking-[1px] text-taupe"
+          className=" text-[22px] font-semibold tracking-[1px] text-taupe"
           style={{ margin: 0 }}
         >
           {experience.company_name}
@@ -103,13 +103,13 @@ const Experience = () => {
             }
           >
             <button
-              className="live-demo mt-[16px] flex 
-                h-[46px] w-[125px] items-center 
-                justify-between gap-1 whitespace-nowrap rounded-[10px] bg-jetLight py-5 
-                pl-3 pr-3 font-beckman text-[14px] 
-                font-bold text-timberWolf transition duration-[0.2s] 
-                ease-in-out hover:bg-battleGray hover:text-eerieBlack 
-                sm:mt-[22px] sm:h-[58px] sm:w-[148px] 
+              className="live-demo mt-[16px] flex
+                h-[46px] w-[125px] items-center
+                justify-between gap-1 whitespace-nowrap rounded-[10px] bg-jetLight py-5
+                pl-3 pr-3 font-beckman text-[14px]
+                font-bold text-timberWolf transition duration-[0.2s]
+                ease-in-out hover:bg-battleGray hover:text-eerieBlack
+                sm:mt-[22px] sm:h-[58px] sm:w-[148px]
                 sm:text-[18px]"
               onClick={() => {
                 downloadResume();
@@ -129,7 +129,7 @@ const Experience = () => {
               <img
                 src={download}
                 alt="download"
-                className="download-btn h-[23px] w-[23px] 
+                className="download-btn h-[23px] w-[23px]
                   object-contain sm:h-[26px] sm:w-[26px]"
               />
             </button>

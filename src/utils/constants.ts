@@ -148,10 +148,10 @@ export const experiences: IExperience[] = [
     ],
   },
   {
-    title: "Senior Software Engineer",
-    company_name: "Exacta Process Platforms",
+    title: "Lead Developer (CTO:Sasi Software Solutions)",
+    company_name: "Client - Exacta Process Platforms",
     location: "Remote",
-    type: "Contractor",
+    type: "Software Service Provider",
     icon: exacta,
     iconBg: "#000000",
     date: "Mar 2021 - Feb 2022",
